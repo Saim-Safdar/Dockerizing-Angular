@@ -8,6 +8,9 @@ This project shows How to run angular app inside a container:
 * How to build an image.
 * How to run a containerize angular app.
 
+## Explore docker images on docker hub corresponding to repo.
+*  https://hub.docker.com/repository/docker/saimsafdar14/nginx-angular
+
 ## Running the Project Locally
 
 1. Install the Angular CLI
