@@ -14,7 +14,7 @@ services:
     image: nginx-angular
     build:
       context: .
-      dockerfile: nginx.dockerfile
+      dockerfile: .docker/nginx.dockerfile
     volumes:
       - ./dist:/usr/share/nginx/html
     ports:
@@ -30,7 +30,7 @@ services:
     image: angular-node-service
     build:
       context: ./server
-      dockerfile: node.dockerfile
+      dockerfile: ../.docker/node.dockerfile
     environment:
       - NODE_ENV=development
     ports:
@@ -39,18 +39,18 @@ services:
       - app-network
       
   # Disabled in case someone is running this on Windows (OK to uncomment if on Mac/Linux)
-  # cadvisor:
-  #   container_name: cadvisor
-  #   image: google/cadvisor
-  #   volumes:
-  #     - /:/rootfs:ro
-  #     - /var/run:/var/run:rw
-  #     - /sys:/sys:ro
-  #     - /var/lib/docker/:/var/lib/docker:ro
-  #   ports:
-  #     - "8080:8080"
-  #   networks:
-  #     - app-network
+  cadvisor:
+    container_name: cadvisor
+    image: gcr.io/google-containers/cadvisor:latest
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
 
 networks:
   app-network:
