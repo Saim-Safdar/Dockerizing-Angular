@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: node
+  name: node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+      - env:
+        - name: NODE_ENV
+          value: development
+        image: angular-node-service
+        imagePullPolicy: IfNotPresent
+        name: angular-node-service
+        ports:
+        - containerPort: 3000
+        resources: {}
