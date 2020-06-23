@@ -1,9 +1,9 @@
 export interface ICustomer {
     id: number;
-    name: string;
-    city: string;
-    orderTotal?: number;
-    customerSince: any;
+    author_name: string;
+    books: string;
+    twitter: string;
+    twitter_url: any;
 }
 
 export interface IOrder {
@@ -13,6 +13,6 @@ export interface IOrder {
 
 export interface IOrderItem {
     id: number;
-    productName: string;
-    itemCost: number;
+    booksName: string;
+    url: string;
 }

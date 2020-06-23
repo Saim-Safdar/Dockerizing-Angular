@@ -4,29 +4,25 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th (click)="sort('name')">Name</th>
-            <th (click)="sort('city')">City</th>
-            <th (click)="sort('orderTotal')">Order Total</th>
+            <th (click)="sort('author_name')">Authors Name</th>
+            <th (click)="sort('books')">Books</th>
+            <th (click)="sort('twitter')">Twitter</th>
         </tr>
     </thead>
     <tr *ngFor="let cust of filteredCustomers">
         <td>
             <a [routerLink]="['/orders', cust.id]">
-                {{ cust.name | capitalize }}
+                {{ cust.author_name | capitalize }}
             </a>
         </td>
-        <td>{{ cust.city }}</td>
-        <td>{{ cust.orderTotal | currency:currencyCode:'symbol' }}
-    </tr>
-    <tr *ngIf="filteredCustomers && filteredCustomers.length">
-        <td colspan="2">&nbsp;</td>
-        <td>
-            {{ customersOrderTotal | currency:currencyCode:'symbol' }}
-        </td>
+        <td>{{ cust.books }}</td>
+        <nav class="nav">
+            <td><a class="nav-link active" href="{{ cust.twitter_url}}">{{ cust.twitter }}</a></td>
+        </nav>
     </tr>
     <tr *ngIf="!filteredCustomers || !filteredCustomers.length">
-        <td colspan="4">No customers found</td>
+        <td colspan="4">No Authors found</td>
     </tr>
 </table>
-Number of Customers: {{ filteredCustomers.length }}
+Number of Authors: {{ filteredCustomers.length }}
 <br />

@@ -2,30 +2,30 @@
       {
             "customerId": 1,
             "orderItems": [
-                {"id": 1, "productName": "Baseball", "itemCost": 9.99},
-                {"id": 2, "productName": "Bat", "itemCost": 19.99}
+                {"id": 1, "booksName": "Docker Deep Dive", "url": "https://nigelpoulton.com/books"},
+                {"id": 2, "booksName": "The Kubernetes Book", "url": "https://nigelpoulton.com/books"}
             ]
       },
       {
             "customerId": 2,
             "orderItems": [
-                {"id": 3, "productName": "Basketball", "itemCost": 7.99},
-                {"id": 4, "productName": "Shoes", "itemCost": 199.99}
+                {"id": 3, "booksName": "Docker on Windows", "url": "https://blog.sixeyed.com/books/"},
+                {"id": 4, "booksName": "Learn Kubernetes in a Month of Lunches", "url": "https://www.manning.com/books/learn-kubernetes-in-a-month-of-lunches"}
             ]
       },
       {
             "customerId": 3,
             "orderItems": [
-                {"id": 5, "productName": "Frisbee", "itemCost": 2.99},
-                {"id": 6, "productName": "Hat", "itemCost": 5.99}
+                {"id": 5, "booksName": "Kubernetes Security", "url": "https://www.oreilly.com/library/view/kubernetes-security/9781492039075/"},
+                {"id": 6, "booksName": "Container Security", "url": "https://info.aquasec.com/container-security-book"}
             ]
       },
       {
             "customerId": 4,
             "orderItems": [
-                {"id": 7, "productName": "Boomerang", "itemCost": 29.99},
-                {"id": 8, "productName": "Helmet", "itemCost": 19.99},
-                {"id": 9, "productName": "Kangaroo Saddle", "itemCost": 179.99}
+                {"id": 7, "booksName": "Istio Up & Running", "url": "https://layer5.io/books/istio-up-and-running"},
+                {"id": 8, "booksName": "The Enterprise Path to Service Mesh Architecture", "url": "https://layer5.io/books/the-enterprise-path-to-service-mesh-architectures"},
+                {"id": 9, "booksName": "Service Mesh Patterns", "url": "https://layer5.io/books/service-mesh-patterns"}
             ]
       },
       {

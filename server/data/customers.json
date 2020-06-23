@@ -1,26 +1,26 @@
 [
       {
             "id": 1,
-            "name": "ted James",
-            "city": " Phoenix ",
-            "orderTotal": 40.99
+            "author_name": "Nigel Poulton",
+            "books": " Docker & Kubernetes ",
+            "twitter": "@nigelpoulton"
       },
       {
             "id": 2,
-            "name": "Michelle Thompson",
-            "city": "Los Angeles ",
-            "orderTotal": 89.99
+            "author_name": "Elton Stoneman",
+            "books": " Docker & Kubernetes ",
+            "twitter": "@EltonStoneman"
       },
       {
             "id": 3,
-            "name": "James Thomas",
-            "city": " Las Vegas ",
-            "orderTotal": 29.99
+            "author_name": "James Thomas",
+            "books": " Containers ",
+            "twitter": "@lizrice"
       },
       {
             "id": 4,
-            "name": "Tina Adams",
-            "city": "Seattle",
-            "orderTotal": 15.99
+            "author_name": "Lee Calcote",
+            "books": " Service Mesh ",
+            "twitter": "@lcalcote"
       }
 ]

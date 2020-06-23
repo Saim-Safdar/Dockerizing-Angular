@@ -14,7 +14,7 @@ export class CustomersComponent implements OnInit {
     constructor(private dataService: DataService) { }
 
     ngOnInit() {
-      this.title = 'Customers';
+      this.title = 'Famous Cloud Native Books';
       this.dataService.getCustomers()
           .subscribe((customers: ICustomer[]) => this.people = customers);
 
