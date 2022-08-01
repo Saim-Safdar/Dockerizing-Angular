@@ -1,7 +1,5 @@
 FROM node:alpine
 
-LABEL author="Dan Wahlin"
-
 WORKDIR /var/www/angular-node-service
 
 COPY package.json package.json
